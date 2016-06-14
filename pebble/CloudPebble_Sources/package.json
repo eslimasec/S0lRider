@@ -1,0 +1,38 @@
+{
+    "author": "eslimasec@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "s0lrider",
+    "pebble": {
+        "capabilities": [
+            ""
+        ],
+        "displayName": "s0lRider Pebble Time App",
+        "enableMultiJS": true,
+        "messageKeys": {},
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/sole.png",
+                    "menuIcon": true,
+                    "name": "SOLEBMP_IMAGE",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt"
+                    ],
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "30db2c08-00fc-471a-8a03-8862c1918239",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
