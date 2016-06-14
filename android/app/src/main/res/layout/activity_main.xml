@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textViewDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Direction"
+            android:textColor="#444444"
+            android:textSize="20dp" />
+                <TextView
+            android:id="@+id/textViewPebble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewDirection"
+            android:text="Pebble"
+            android:textColor="#444444"
+            android:textSize="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lights"
+            android:id="@+id/buttonLights"
+            android:textSize="20dp"
+            android:nestedScrollingEnabled="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_joystick"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/image_button_bg" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car&apos;s IP:"
+        android:textColor="#444444"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="64dp"
+        android:layout_marginEnd="64dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextIP"
+        android:singleLine="true"
+        android:hint="IP Address"
+        android:layout_below="@+id/textViewIP"
+        android:layout_alignLeft="@+id/textViewIP"
+        android:layout_alignStart="@+id/textViewIP"
+        android:inputType="phone" />
+</RelativeLayout>
